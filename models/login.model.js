@@ -5,6 +5,7 @@ const LoginSchema=mongoose.Schema({
     Dob:{type:String, require:true},
     email:{type:String, require:true},
     pass:{type:String, require:true},
+    
 });
 
 const loginModel=mongoose.model("loginuser",LoginSchema);

@@ -7,7 +7,8 @@ const ProductSchema=mongoose.Schema({
     For:String,
     des:String,
     Rating:String,
-    category:String
+    category:String,
+    color:{type:String, require:true}
 });
 
 const ProductMenMOdel=mongoose.model("Productofmen",ProductSchema);

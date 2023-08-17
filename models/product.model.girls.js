@@ -6,7 +6,9 @@ const ProductSchema=mongoose.Schema({
     price:{type:String, require:true},
     For:{type:String, require:true},
     des:{type:String, require:true},
-    category:{type:String, require:true}
+    category:{type:String, require:true},
+    color:{type:String, require:true}
+    
   
 });
 
