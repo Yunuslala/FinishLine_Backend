@@ -3,7 +3,7 @@ const{connection}=require("./db");
 const {productRoute}=require("./router/produt.router");
 const {admin}=require("./router/admin.router");
 const {loginRoute}=require("./router/login.router");
-const {searchingRouter}=require("./router/searching.router")
+const {searchingRouter}=require("./router/Searching.router")
 const cors=require("cors")
 const app=express();
 app.use(express.json())
