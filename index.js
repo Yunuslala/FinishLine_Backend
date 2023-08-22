@@ -3,12 +3,14 @@ const{connection}=require("./db");
 const {productRoute}=require("./router/produt.router");
 const {admin}=require("./router/admin.router");
 const {loginRoute}=require("./router/login.router");
-const {searchingRouter}=require("./router/searching.router")
+const {searchingRouter}=require("./router/searching.router");
+const {CartRouter}=require("./router/Cart.router")
 const cors=require("cors")
 const app=express();
 app.use(express.json())
 app.use(cors());
-app.use(searchingRouter)
+app.use(searchingRouter);
+app.use(CartRouter)
 app.use(loginRoute)
 app.use(productRoute);
 app.use(admin)

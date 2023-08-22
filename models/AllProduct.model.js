@@ -1,5 +1,5 @@
 const mongoose=require("mongoose");
-const cartSchema=mongoose.Schema({
+let AllProductSchema=mongoose.Schema({
     image:String,
     type:String,
     Brand:String,
@@ -9,9 +9,8 @@ const cartSchema=mongoose.Schema({
     category:String,
     productId:String
 });
-
-const cartModel=mongoose.model("carts",cartSchema);
+let AllProductModel=mongoose.model("AlltData",AllProductSchema);
 
 module.exports={
-    cartModel
+    AllProductModel
 }
